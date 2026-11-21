@@ -49,31 +49,51 @@ h1 i,h2 i,h3 i{font-style:italic}
 
 /* phone mock of the dashboard */
 .phone{justify-self:center;width:300px;border-radius:38px;background:#23201D;padding:9px;box-shadow:0 30px 60px -30px rgba(35,32,29,.45)}
-.screen{border-radius:30px;background:var(--bg);overflow:hidden;height:600px;display:flex;flex-direction:column}
+.screen{border-radius:30px;background:var(--bg);overflow:hidden;height:670px;display:flex;flex-direction:column}
 .p-top{padding:16px 16px 0;display:flex;justify-content:space-between;align-items:center}
 .p-top .m{font-family:var(--display);font-size:15px}
 .p-top .m i{font-style:italic}
 .p-tabs{display:flex;gap:2px;padding:8px 8px 6px;border-bottom:1px solid var(--line)}
 .p-tab{flex:1;text-align:center;font-size:7.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--sub);padding:6px 0;border-radius:9px}
 .p-tab.on{background:var(--butter);color:var(--ink)}
-.p-body{padding:12px 14px;display:flex;flex-direction:column;gap:9px;overflow:hidden;flex:1}
+.p-body{padding:10px 13px;display:flex;flex-direction:column;gap:7px;overflow:hidden;flex:1}
 .p-eb{font-size:7.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--sub)}
-.p-h{font-family:var(--display);font-size:21px;line-height:1.1}
+.p-h{font-family:var(--display);font-size:19px;line-height:1.1}
 .p-h i{font-style:italic}
-.p-txt{font-size:10.5px;color:var(--sub);line-height:1.45}
-.p-next{background:var(--green);color:#fff;border-radius:14px;padding:10px 12px}
+.p-txt{font-size:9.5px;color:var(--sub);line-height:1.45}
+.p-next{background:var(--green);color:#fff;border-radius:13px;padding:9px 11px}
 .p-next .k{font-size:7.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--green-soft);font-weight:600}
 .p-next .t{font-size:12px;font-weight:600;margin-top:2px}
 .p-next .s{font-size:9.5px;color:var(--green-soft)}
-.p-card{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:8px 10px}
-.p-row{display:flex;align-items:center;gap:7px;font-size:10px;padding:5px 0;border-top:1px solid var(--line2)}
+.p-card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:7px 9px}
+.p-row{display:flex;align-items:center;gap:7px;font-size:9.5px;padding:4px 0;border-top:1px solid var(--line2)}
 .p-row:first-of-type{border-top:none}
 .chip{display:inline-flex;align-items:center;height:14px;padding:0 5px;border-radius:4px;font-size:7px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
 .c-over{background:var(--you);color:#86452F}.c-today{background:var(--kids);color:#2E4A60}.c-soon{background:var(--butter);color:#6B5520}
-.p-tiles{display:grid;grid-template-columns:1fr 1fr;gap:7px}
-.p-tile{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:8px;text-align:center}
+.p-3{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.p-tile{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:7px 4px;text-align:center}
 .p-tile svg{display:block;margin:0 auto}
-.p-tile .l{font-size:6.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--sub);margin-top:4px}
+.p-tile .l,.p-cd .l{font-size:6px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--sub);margin-top:3px;line-height:1.2}
+.p-cd{background:var(--card);border:1px solid var(--line);border-radius:11px;padding:6px 8px}
+.p-cd b{font-family:var(--display);font-weight:400;font-size:17px;line-height:1}
+.p-cd .l{margin-top:1px}
+.p-sm2{font-size:8.5px;margin-top:3px;line-height:1.2}
+.p-f{font-size:7.5px;color:var(--faint)}
+.p-nx{display:flex;justify-content:space-between;align-items:flex-start}
+.p-min{text-align:right;line-height:1}
+.p-min b{display:block;font-family:var(--display);font-weight:400;font-size:20px}
+.p-min span{font-size:6.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--green-soft);font-weight:600}
+.p-then{border-top:1px solid rgba(255,255,255,.18);margin-top:7px;padding-top:6px;font-size:9px;display:flex;flex-direction:column;gap:2px}
+.p-then span{display:inline-block;width:34px;color:var(--green-soft)}
+.p-sb{display:flex;justify-content:space-between;align-items:center;margin-bottom:1px}
+.p-see{font-size:8px;color:var(--sub)}
+.p-o{width:11px;height:11px;border-radius:50%;border:1.3px solid var(--outline);flex:none}
+.p-g{flex:1;min-width:0}
+.p-mail{display:flex;align-items:center;gap:8px;padding:7px 9px}
+.p-mail b{font-size:9.5px;font-weight:600;display:block}
+.p-sm{font-size:8px;color:var(--sub);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.p-ic{width:26px;height:26px;border-radius:13px;background:var(--kids);display:flex;align-items:center;justify-content:center;flex:none}
+.p-pill{font-size:8px;background:var(--ink);color:var(--bg);border-radius:10px;padding:4px 8px;flex:none}
 .p-dock{margin:0 10px 10px;height:38px;border-radius:19px;background:var(--beige);display:flex;align-items:center;justify-content:space-between;padding:0 4px 0 14px;font-size:10.5px;color:var(--faint)}
 .p-dock .mic{width:30px;height:30px;border-radius:15px;background:var(--green);display:flex;align-items:center;justify-content:center}
 
@@ -103,11 +123,8 @@ section{padding-block:56px}
 .offer{background:var(--you);border-radius:26px;padding:34px;display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
 .offer h2{font-size:clamp(28px,4vw,40px);line-height:1.1;margin-top:10px}
 .offer p{color:#4E4842;margin:12px 0 0}
-.price{background:var(--card);border-radius:20px;padding:22px;text-align:center}
-.price .was{color:var(--faint);text-decoration:line-through;font-size:16px}
-.price .now{font-family:var(--display);font-size:54px;line-height:1}
-.price .plus{font-size:14.5px;color:var(--sub);margin-top:8px}
-.price .limit{display:inline-block;margin-top:12px;font-size:11.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#86452F}
+.offer-cta{text-align:center}
+.offer-cta .note{margin-top:12px;font-size:14px;color:#4E4842}
 
 /* good to know */
 .know{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
@@ -157,7 +174,7 @@ footer .mark{font-size:18px;color:var(--ink);display:block;margin-bottom:6px}
   .lands{justify-content:flex-start}
   .join{padding:24px 20px;border-radius:22px}
   .phone{width:280px}
-  .screen{height:560px}
+  .screen{height:660px}
 }
 </style>
 </head>
@@ -185,17 +202,32 @@ footer .mark{font-size:18px;color:var(--ink);display:block;margin-bottom:6px}
       <div class="p-body">
         <div class="p-eb">Saturday · 21 November</div>
         <div class="p-h">Good morning, <i>Olga</i></div>
-        <div class="p-txt">Swimming at 9, then nothing fixed until weekly planning at 2:30. Mia's party is a week away.</div>
-        <div class="p-next"><div class="k">Next · 9:00 · Kids</div><div class="t">Swimming lessons</div><div class="s">Leave by 8:40. Towels are in the car.</div></div>
-        <div class="p-card">
-          <div class="p-eb" style="margin-bottom:3px">Due soon</div>
-          <div class="p-row"><span class="chip c-over">Overdue</span>Pay school fees</div>
-          <div class="p-row"><span class="chip c-today">Today</span>Sign the excursion form</div>
-          <div class="p-row"><span class="chip c-soon">Soon</span>Swimming term fee</div>
+        <div class="p-txt">Swimming at 9, then a free stretch until weekly planning at 2:30. Mia's party is a week away.</div>
+        <div class="p-next">
+          <div class="p-nx"><div><div class="k">Next · 9:00 · Kids</div><div class="t">Swimming lessons</div></div><div class="p-min"><b>40</b><span>min</span></div></div>
+          <div class="p-then"><div class="k">Then</div><div><span>2:30</span>Weekly planning</div><div><span>4:00</span>Playdate at Zoe's</div></div>
         </div>
-        <div class="p-tiles">
-          <div class="p-tile"><svg width="44" height="44" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="18" fill="none" stroke="#EEEAE4" stroke-width="5"/><circle cx="22" cy="22" r="18" fill="none" stroke="#2F5446" stroke-width="5" stroke-linecap="round" stroke-dasharray="70 113" transform="rotate(-90 22 22)"/><text x="22" y="26" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="11" fill="#23201D">$312</text></svg><div class="l">Budget this week</div></div>
-          <div class="p-tile"><svg width="44" height="44" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="18" fill="none" stroke="#EEEAE4" stroke-width="5"/><circle cx="22" cy="22" r="18" fill="none" stroke="#C98F7B" stroke-width="5" stroke-linecap="round" stroke-dasharray="34 113" transform="rotate(-90 22 22)"/><text x="22" y="26" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="11" fill="#23201D">1h30</text></svg><div class="l">Free time today</div></div>
+        <div class="p-card">
+          <div class="p-sb"><div class="p-eb">Due soon</div><div class="p-see">See all 5</div></div>
+          <div class="p-row"><span class="p-o" aria-hidden="true"></span><span class="p-g">Pay school fees</span><span class="chip c-over">Overdue</span></div>
+          <div class="p-row"><span class="p-o" aria-hidden="true"></span><span class="p-g">Sign the excursion form</span><span class="chip c-today">Today</span></div>
+          <div class="p-row"><span class="p-o" aria-hidden="true"></span><span class="p-g">Swimming term fee</span><span class="chip c-soon">Soon</span></div>
+        </div>
+        <div class="p-card p-mail">
+          <span class="p-ic"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#23201D" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg></span>
+          <div class="p-g"><b>From your email · 2 to check</b><div class="p-sm">Book parent-teacher slot, Excursion $25</div></div>
+          <span class="p-pill">Review</span>
+        </div>
+        <div class="p-eb">Coming up</div>
+        <div class="p-3">
+          <div class="p-cd"><b>7</b><div class="l">Days</div><div class="p-sm2">Mia's party</div><div class="p-f">Sat 28 Nov</div></div>
+          <div class="p-cd"><b>12</b><div class="l">Days</div><div class="p-sm2">School concert</div><div class="p-f">Thu 3 Dec</div></div>
+          <div class="p-cd"><b>25</b><div class="l">Days</div><div class="p-sm2">Last day of term</div><div class="p-f">Wed 16 Dec</div></div>
+        </div>
+        <div class="p-3">
+          <div class="p-tile"><svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="16.5" fill="none" stroke="#EEEAE4" stroke-width="4"/><circle cx="20" cy="20" r="16.5" fill="none" stroke="#C98F7B" stroke-width="4" stroke-dasharray="18.7 103.7" stroke-dashoffset="0.0" transform="rotate(-90 20 20)"/><circle cx="20" cy="20" r="16.5" fill="none" stroke="#86A3BC" stroke-width="4" stroke-dasharray="18.7 103.7" stroke-dashoffset="-20.7" transform="rotate(-90 20 20)"/><circle cx="20" cy="20" r="16.5" fill="none" stroke="#CBAA72" stroke-width="4" stroke-dasharray="60.2 103.7" stroke-dashoffset="-41.5" transform="rotate(-90 20 20)"/><text x="20" y="24.5" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="13" fill="#23201D">5</text></svg><div class="l">What needs you</div></div>
+          <div class="p-tile"><svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="16.5" fill="none" stroke="#EEEAE4" stroke-width="4"/><circle cx="20" cy="20" r="16.5" fill="none" stroke="#2F5446" stroke-width="4" stroke-linecap="round" stroke-dasharray="64.3 104" transform="rotate(-90 20 20)"/><text x="20" y="23.5" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="9.5" fill="#23201D">$312</text></svg><div class="l">Spent this week</div></div>
+          <div class="p-tile"><svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="16.5" fill="none" stroke="#EEEAE4" stroke-width="4"/><circle cx="20" cy="20" r="16.5" fill="none" stroke="#C98F7B" stroke-width="4" stroke-linecap="round" stroke-dasharray="39.4 104" transform="rotate(-90 20 20)"/><text x="20" y="23.5" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="9.5" fill="#23201D">1h30</text></svg><div class="l">Free time today</div></div>
         </div>
       </div>
       <div class="p-dock"><span>Drop a thought, or ask</span><span class="mic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0"/><path d="M12 17.5V21"/></svg></span></div>
@@ -244,11 +276,9 @@ footer .mark{font-size:18px;color:var(--ink);display:block;margin-bottom:6px}
         <h2>The waitlist gets in <i>first.</i></h2>
         <p>For 3 to 5 days before everyone else, the waitlist gets Mental Offload at the lowest price it will ever be, plus a free month of the membership: a community of mums sharing how they use AI.</p>
       </div>
-      <div class="price">
-        <div class="was">$49</div>
-        <div class="now">$37</div>
-        <div class="plus">+ your first month of the membership free</div>
-        <div class="limit">3 to 5 days only</div>
+      <div class="offer-cta">
+        <a class="btn" href="#join">Join the waitlist</a>
+        <div class="note">The founding price goes to the waitlist first.</div>
       </div>
     </div>
   </div>
