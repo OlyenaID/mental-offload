@@ -1,11 +1,15 @@
-// Adds a waitlist sign-up to Kit, tagged "Waitlist" plus their system of choice.
+// Adds a sign-up to Kit.
+//   list "waitlist" (the main form): tagged "Waitlist" + "Claude".
+//   list "other" (the "What if I don't use Claude?" form): tagged "Other tools" + their choice
+//   ("ChatGPT", "Muse" or "App"; "Something else" gets only "Other tools").
 // Needs one environment variable in Vercel: KIT_API_KEY (a Kit v4 API key).
-// Tag names can be changed with KIT_TAG_WAITLIST, KIT_TAG_CLAUDE, KIT_TAG_CHATGPT, KIT_TAG_MUSE, KIT_TAG_APP.
+// Tag names can be changed with KIT_TAG_WAITLIST, KIT_TAG_OTHER, KIT_TAG_CLAUDE, KIT_TAG_CHATGPT, KIT_TAG_MUSE, KIT_TAG_APP.
 
 const KIT = 'https://api.kit.com/v4';
 
 const TAGS = {
   waitlist: process.env.KIT_TAG_WAITLIST || 'Waitlist',
+  other: process.env.KIT_TAG_OTHER || 'Other tools',
   claude: process.env.KIT_TAG_CLAUDE || 'Claude',
   chatgpt: process.env.KIT_TAG_CHATGPT || 'ChatGPT',
   muse: process.env.KIT_TAG_MUSE || 'Muse',
@@ -59,7 +63,8 @@ module.exports = async function handler(req, res) {
 
   const email = String(data.email || '').trim().toLowerCase();
   const firstName = String(data.first_name || '').trim().slice(0, 60);
-  const system = String(data.system || 'claude').toLowerCase();
+  const list = data.list === 'other' ? 'other' : 'waitlist';
+  const system = String(data.system || '').toLowerCase();
 
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) || email.length > 200) {
     return res.status(400).json({ error: 'Please check your email address.' });
@@ -71,7 +76,9 @@ module.exports = async function handler(req, res) {
       body: JSON.stringify({ email_address: email, first_name: firstName || undefined, state: 'active' }),
     });
 
-    const wanted = [TAGS.waitlist, TAGS[system] || TAGS.claude];
+    const wanted = list === 'other'
+      ? [TAGS.other].concat(['chatgpt', 'muse', 'app'].includes(system) ? [TAGS[system]] : [])
+      : [TAGS.waitlist, TAGS.claude];
     const tags = await tagIds(key, wanted);
     const missing = tags.filter((t) => !t.id).map((t) => t.name);
     for (const t of tags.filter((t) => t.id)) {

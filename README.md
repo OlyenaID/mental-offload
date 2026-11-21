@@ -3,13 +3,13 @@
 The public site for Mental Offload, deployed on Vercel.
 
 - `/waitlist` (`waitlist/index.html`): the waitlist page. `/` redirects here for now.
-- `/api/subscribe` (`api/subscribe.js`): adds a sign-up to Kit with the tags `Waitlist` plus the chosen system (`Claude`, `ChatGPT`, `Muse` or `App`).
+- `/api/subscribe` (`api/subscribe.js`): adds a sign-up to Kit. The main form is tagged `Waitlist` + `Claude`. The "What if I don't use Claude?" form is tagged `Other tools` + their choice (`ChatGPT`, `Muse` or `App`; "Something else" gets only `Other tools`).
 
 ## Setup in Vercel
 
 1. Import this repo as a new project named `mental-offload` (address: mental-offload.vercel.app).
 2. In Project Settings > Environment Variables, add `KIT_API_KEY` (your Kit v4 API key).
-3. In Kit, create the tags `Waitlist`, `Claude`, `ChatGPT`, `Muse` and `App`.
+3. In Kit, create the tags `Waitlist`, `Claude`, `Other tools`, `ChatGPT`, `Muse` and `App`.
 
 ## Preview locally
 
