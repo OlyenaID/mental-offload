@@ -7,7 +7,7 @@ The public site for Mental Offload, deployed on Vercel.
 
 ## Setup in Vercel
 
-1. Import this repo as a new project named `mental-offload` (address: mental-offload.vercel.app).
+1. Import this repo (OlyenaID/mental-offload) as a Vercel project. Live address: mental-offload-system.vercel.app/waitlist.
 2. In Project Settings > Environment Variables, add `KIT_API_KEY` (your Kit v4 API key).
 3. In Kit, create the tags `Waitlist`, `Claude`, `Other tools`, `ChatGPT`, `Muse` and `App`.
 
