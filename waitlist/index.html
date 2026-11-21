@@ -46,10 +46,13 @@ h1 i,h2 i,h3 i{font-style:italic}
 .hero-head{grid-area:head;align-self:end}
 .hero-bio{grid-area:bio}
 .hero-media{grid-area:media;align-self:center}
-.sys{display:flex;align-items:center;gap:10px;margin-top:18px;font-size:15px;font-weight:600}
-.switch{position:relative;width:34px;height:20px;border-radius:10px;background:var(--beige);border:1px solid var(--outline);flex:none}
-.switch span{position:absolute;left:2px;top:2px;width:14px;height:14px;border-radius:50%;background:var(--card);box-shadow:0 1px 2px rgba(35,32,29,.3)}
-.hero h1{font-size:clamp(40px,5.6vw,62px);line-height:1.04;letter-spacing:-1px;margin-top:14px}
+.hero h1{font-size:clamp(46px,6.4vw,74px);line-height:1.02;letter-spacing:-1.5px;margin-top:16px}
+.nw{white-space:nowrap}
+.offsw{display:inline-flex;align-items:center;gap:.1em;height:.92em;padding:0 .2em 0 .09em;margin:0 .02em;border:.045em solid var(--ink);border-radius:.46em;background:var(--beige);vertical-align:-.04em;line-height:1}
+.offsw .knob{width:.68em;height:.68em;border-radius:50%;background:var(--card);box-shadow:0 .03em .08em rgba(35,32,29,.35);flex:none}
+.offsw .w{font-size:.78em;letter-spacing:-.01em;transform:translateY(-.03em)}
+.hero .tagline{font-family:var(--display);font-weight:400;font-size:clamp(26px,3.2vw,34px);line-height:1.15;letter-spacing:-.4px;margin:18px 0 0;text-wrap:balance}
+.hero .tagline i{font-style:italic}
 .hero p.lead{font-size:20px;line-height:1.5;color:var(--sub);max-width:30em;margin:18px 0 0}
 .hero p.lead i{font-family:var(--display);font-size:1.15em;color:var(--ink)}
 .bio{display:flex;gap:16px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px;margin-bottom:22px}
@@ -232,8 +235,8 @@ footer .mark{font-size:18px;color:var(--ink);display:block;margin-bottom:6px}
 <div class="wrap hero">
   <div class="hero-head">
     <div class="eb">For mums running out of mental space</div>
-    <div class="sys"><span class="switch" aria-hidden="true"><span></span></span>Mental Offload system</div>
-    <h1>Don’t keep anything in your head <i>anymore.</i></h1>
+    <h1 aria-label="Mental Offload system">Mental <span class="nw"><span class="offsw" aria-hidden="true"><span class="knob"></span><span class="w">Off</span></span>load</span> <i>system</i></h1>
+    <h2 class="tagline">Don’t keep anything in your head <i>anymore.</i></h2>
     <p class="lead">One place to put down everything you’re holding. <i>Finally.</i></p>
   </div>
 
