@@ -57,7 +57,9 @@ h1 i,h2 i,h3 i{font-style:italic}
 .hero p.lead i{font-family:var(--display);font-size:1.15em;color:var(--ink)}
 .bio{display:flex;gap:16px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px;margin-bottom:22px}
 .bio p{margin:0;font-size:15.5px;line-height:1.6;color:#4E4842}
-.bio-photo{flex:none;width:64px;height:64px;border-radius:50%;object-fit:cover;background:var(--you);display:flex;align-items:center;justify-content:center;font-family:var(--display);font-style:italic;font-size:28px;color:#86452F}
+.bio{gap:18px}
+.bio-photo{flex:none;display:block;width:150px;height:auto;aspect-ratio:4/5;border-radius:16px;object-fit:cover}
+.bio .hl{white-space:nowrap;font-family:var(--display);font-style:italic;font-weight:600;font-size:1.12em;color:var(--ink)}
 
 /* phone mock of the dashboard */
 .phone{justify-self:center;width:300px;border-radius:38px;background:#23201D;padding:9px;box-shadow:0 30px 60px -30px rgba(35,32,29,.45)}
@@ -229,6 +231,7 @@ footer .mark{font-size:18px;color:var(--ink);display:block;margin-bottom:6px}
   section{padding-block:40px}
   .grid,.nomore{grid-template-columns:1fr}
   .bio{flex-direction:column}
+  .bio-photo{width:100%;aspect-ratio:4/3;object-position:50% 40%}
   .join{padding:24px 20px;border-radius:22px}
   .phone{width:280px}
   .screen{height:660px}
@@ -253,9 +256,8 @@ footer .mark{font-size:18px;color:var(--ink);display:block;margin-bottom:6px}
 
   <div class="hero-bio">
     <div class="bio">
-      <!-- Swap this circle for your photo: <img class="bio-photo" src="/olga.jpg" alt="Olga"> -->
-      <div class="bio-photo" aria-hidden="true">O</div>
-      <p>Hi, I’m Olga, a toddler mum building a business in about 20 hours a week. I built this for me. I didn’t plan to launch a digital product. I was working on my consulting and my community. I needed more mental space and focus. So I built this Mental Offload system to make my own life easier. Then I realised it’s life-changing, and I had to share it with other mums.</p>
+      <img class="bio-photo" src="img/olga.jpg" alt="Olga on the porch with her toddler and her dog" width="640" height="800">
+      <p>Hi, I’m Olga, a toddler mum building a business in about 20 hours a week. I built this for me. I didn’t plan to launch a digital product. I was working on my consulting and my community. I needed more mental space and focus. So I built this Mental Offload system to make my own life easier. Then I realised it is <b class="hl">life-changing</b>, and I had to share it with other mums.</p>
     </div>
     <a class="btn" href="#join">Join the waitlist</a>
   </div>
