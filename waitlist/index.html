@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mental Offload · Join the waitlist</title>
+<meta name="description" content="Everything in your head, in one place. Mental Offload files every thought, plans your day and week, and gives you a calm brief each morning. Join the waitlist.">
+<meta property="og:title" content="Mental Offload · Join the waitlist">
+<meta property="og:description" content="Everything in your head, in one place. For mums carrying the mental load.">
+<meta name="theme-color" content="#FAF8F5">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Inter:wght@400..600&display=swap">
+<style>
+/* Mental Offload look: off-white, one forest green accent, soft area colours, Fraunces with one italic word, Inter for everything else. */
+:root{
+  --bg:#FAF8F5; --card:#FFFDFA; --ink:#23201D; --sub:#645D56; --faint:#8C847B;
+  --line:#ECE5DB; --line2:#F0EBE4; --beige:#EEEAE4; --outline:#CFC7BC;
+  --green:#2F5446; --green-soft:#C9D9CF; --butter:#F5EBCF;
+  --work:#DDE6DA; --kids:#DCE5EC; --you:#F0DFD8; --home:#F1E6D0; --health:#E9E0EC;
+  --display:'Fraunces',Georgia,serif; --body:'Inter',system-ui,-apple-system,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){html{scroll-behavior:auto}}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+a{color:var(--green)}
+.wrap{max-width:1040px;margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+.eb{font-size:11.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--sub)}
+h1,h2,h3{font-family:var(--display);font-weight:400;margin:0;text-wrap:balance}
+h1 i,h2 i,h3 i{font-style:italic}
+.sub{color:var(--sub)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:52px;padding:0 26px;border-radius:26px;border:none;background:var(--green);color:#fff;font:inherit;font-size:16px;font-weight:600;text-decoration:none;cursor:pointer}
+.btn:hover{background:#264538}
+.btn:focus-visible,input:focus-visible,.opt input:focus-visible+span{outline:2px solid var(--green);outline-offset:3px}
+
+/* header */
+.top{display:flex;align-items:center;justify-content:space-between;padding-block:22px}
+.mark{font-family:var(--display);font-size:22px}
+.mark i{font-style:italic}
+.top a.small{font-size:14px;font-weight:600;color:var(--ink);text-decoration:none;border:1px solid var(--outline);border-radius:18px;padding:7px 14px}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;padding-block:28px 64px}
+.hero h1{font-size:clamp(40px,6vw,64px);line-height:1.04;letter-spacing:-1px;margin-top:14px}
+.hero p.lead{font-size:18px;line-height:1.55;color:var(--sub);max-width:34em;margin:20px 0 28px}
+.hero .note{font-size:13.5px;color:var(--faint);margin-top:14px}
+
+/* phone mock of the dashboard */
+.phone{justify-self:center;width:300px;border-radius:38px;background:#23201D;padding:9px;box-shadow:0 30px 60px -30px rgba(35,32,29,.45)}
+.screen{border-radius:30px;background:var(--bg);overflow:hidden;height:600px;display:flex;flex-direction:column}
+.p-top{padding:16px 16px 0;display:flex;justify-content:space-between;align-items:center}
+.p-top .m{font-family:var(--display);font-size:15px}
+.p-top .m i{font-style:italic}
+.p-tabs{display:flex;gap:2px;padding:8px 8px 6px;border-bottom:1px solid var(--line)}
+.p-tab{flex:1;text-align:center;font-size:7.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--sub);padding:6px 0;border-radius:9px}
+.p-tab.on{background:var(--butter);color:var(--ink)}
+.p-body{padding:12px 14px;display:flex;flex-direction:column;gap:9px;overflow:hidden;flex:1}
+.p-eb{font-size:7.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--sub)}
+.p-h{font-family:var(--display);font-size:21px;line-height:1.1}
+.p-h i{font-style:italic}
+.p-txt{font-size:10.5px;color:var(--sub);line-height:1.45}
+.p-next{background:var(--green);color:#fff;border-radius:14px;padding:10px 12px}
+.p-next .k{font-size:7.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--green-soft);font-weight:600}
+.p-next .t{font-size:12px;font-weight:600;margin-top:2px}
+.p-next .s{font-size:9.5px;color:var(--green-soft)}
+.p-card{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:8px 10px}
+.p-row{display:flex;align-items:center;gap:7px;font-size:10px;padding:5px 0;border-top:1px solid var(--line2)}
+.p-row:first-of-type{border-top:none}
+.chip{display:inline-flex;align-items:center;height:14px;padding:0 5px;border-radius:4px;font-size:7px;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.c-over{background:var(--you);color:#86452F}.c-today{background:var(--kids);color:#2E4A60}.c-soon{background:var(--butter);color:#6B5520}
+.p-tiles{display:grid;grid-template-columns:1fr 1fr;gap:7px}
+.p-tile{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:8px;text-align:center}
+.p-tile svg{display:block;margin:0 auto}
+.p-tile .l{font-size:6.5px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--sub);margin-top:4px}
+.p-dock{margin:0 10px 10px;height:38px;border-radius:19px;background:var(--beige);display:flex;align-items:center;justify-content:space-between;padding:0 4px 0 14px;font-size:10.5px;color:var(--faint)}
+.p-dock .mic{width:30px;height:30px;border-radius:15px;background:var(--green);display:flex;align-items:center;justify-content:center}
+
+/* sections */
+section{padding-block:56px}
+.sec-head{max-width:640px;margin-bottom:28px}
+.sec-head h2{font-size:clamp(30px,4.2vw,42px);line-height:1.1;letter-spacing:-.5px;margin-top:10px}
+.sec-head p{color:var(--sub);font-size:17px;margin:12px 0 0}
+
+/* drop a thought */
+.drops{display:flex;flex-direction:column;gap:12px;max-width:760px}
+.drop{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:14px 16px}
+.said{font-size:15.5px}
+.said::before{content:"\201C"}.said::after{content:"\201D"}
+.arrow{color:var(--faint)}
+.lands{display:flex;flex-wrap:wrap;gap:6px;justify-content:flex-end}
+.tag{display:inline-flex;align-items:center;height:26px;padding:0 10px;border-radius:8px;font-size:13px;font-weight:500;color:#4E4842}
+
+/* features */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.feat{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px;display:flex;flex-direction:column;gap:8px}
+.feat .dot{width:36px;height:36px;border-radius:11px;display:flex;align-items:center;justify-content:center}
+.feat h3{font-size:21px;line-height:1.2}
+.feat p{margin:0;color:var(--sub);font-size:15px}
+
+/* offer */
+.offer{background:var(--you);border-radius:26px;padding:34px;display:grid;grid-template-columns:1.2fr .8fr;gap:28px;align-items:center}
+.offer h2{font-size:clamp(28px,4vw,40px);line-height:1.1;margin-top:10px}
+.offer p{color:#4E4842;margin:12px 0 0}
+.price{background:var(--card);border-radius:20px;padding:22px;text-align:center}
+.price .was{color:var(--faint);text-decoration:line-through;font-size:16px}
+.price .now{font-family:var(--display);font-size:54px;line-height:1}
+.price .plus{font-size:14.5px;color:var(--sub);margin-top:8px}
+.price .limit{display:inline-block;margin-top:12px;font-size:11.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#86452F}
+
+/* good to know */
+.know{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.know > div{display:flex;gap:12px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}
+.know b{font-weight:600}
+.know span.t{flex:none;width:22px;height:22px;border-radius:11px;background:var(--green);display:flex;align-items:center;justify-content:center;margin-top:1px}
+.know p{margin:2px 0 0;color:var(--sub);font-size:14.5px}
+
+/* form */
+.join{background:var(--card);border:1px solid var(--line);border-radius:28px;padding:36px;max-width:640px;margin:0 auto}
+.join h2{font-size:clamp(30px,4vw,40px);line-height:1.1;margin-top:10px}
+.join p.sub{margin:10px 0 24px}
+form{display:flex;flex-direction:column;gap:18px}
+label.f{display:flex;flex-direction:column;gap:7px;font-size:14px;font-weight:600}
+input[type=text],input[type=email]{height:52px;border-radius:14px;border:1px solid var(--outline);background:var(--bg);padding:0 16px;font:inherit;font-size:16px;color:var(--ink)}
+fieldset{border:none;margin:0;padding:0}
+legend{font-size:14px;font-weight:600;margin-bottom:9px}
+.opts{display:flex;flex-wrap:wrap;gap:8px}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;width:1px;height:1px}
+.opt span{display:inline-flex;align-items:center;height:42px;padding:0 16px;border-radius:21px;border:1px solid var(--outline);font-size:15px;cursor:pointer;background:var(--card)}
+.opt input:checked+span{background:var(--ink);border-color:var(--ink);color:#fff}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.form-note{font-size:13px;color:var(--faint);margin:0}
+.msg{font-size:15px;min-height:22px;margin:0}
+.msg.err{color:#B4553B}
+.done{display:none;text-align:center;padding:12px 0}
+.done h3{font-size:30px;margin-top:6px}
+.done p{color:var(--sub)}
+.join.ok form,.join.ok .before{display:none}
+.join.ok .done{display:block}
+
+footer{padding-block:40px 56px;color:var(--faint);font-size:13.5px;text-align:center}
+footer .mark{font-size:18px;color:var(--ink);display:block;margin-bottom:6px}
+
+/* phone width */
+@media (max-width:860px){
+  .hero{grid-template-columns:1fr;gap:36px;padding-block:8px 40px}
+  .grid{grid-template-columns:1fr 1fr}
+  .offer{grid-template-columns:1fr;padding:26px}
+}
+@media (max-width:560px){
+  section{padding-block:40px}
+  .grid,.know{grid-template-columns:1fr}
+  .drop{grid-template-columns:1fr;gap:8px}
+  .arrow{display:none}
+  .lands{justify-content:flex-start}
+  .join{padding:24px 20px;border-radius:22px}
+  .phone{width:280px}
+  .screen{height:560px}
+}
+</style>
+</head>
+<body>
+
+<header class="wrap top">
+  <div class="mark">Mental <i>Offload</i></div>
+  <a class="small" href="#join">Join the waitlist</a>
+</header>
+
+<main>
+<div class="wrap hero">
+  <div>
+    <div class="eb">For mums carrying the mental load</div>
+    <h1>Everything in your head, <i>in one place.</i></h1>
+    <p class="lead">Drop every thought, task and idea into one place. Mental Offload files it, plans your day and week, keeps your lists, meals and money, and gives you a calm brief each morning. It all runs inside Claude.</p>
+    <a class="btn" href="#join">Join the waitlist</a>
+    <div class="note">The waitlist gets in first, at the best price.</div>
+  </div>
+
+  <div class="phone" aria-label="A preview of the Mental Offload home screen" role="img">
+    <div class="screen">
+      <div class="p-top"><div class="m">Mental <i>Offload</i></div><div style="font-size:9px;border:1px solid var(--outline);border-radius:10px;padding:3px 8px">Edit</div></div>
+      <div class="p-tabs"><div class="p-tab on">Home</div><div class="p-tab">Today</div><div class="p-tab">Week</div><div class="p-tab">Money</div><div class="p-tab">Life</div></div>
+      <div class="p-body">
+        <div class="p-eb">Saturday · 21 November</div>
+        <div class="p-h">Good morning, <i>Olga</i></div>
+        <div class="p-txt">Swimming at 9, then nothing fixed until weekly planning at 2:30. Mia's party is a week away.</div>
+        <div class="p-next"><div class="k">Next · 9:00 · Kids</div><div class="t">Swimming lessons</div><div class="s">Leave by 8:40. Towels are in the car.</div></div>
+        <div class="p-card">
+          <div class="p-eb" style="margin-bottom:3px">Due soon</div>
+          <div class="p-row"><span class="chip c-over">Overdue</span>Pay school fees</div>
+          <div class="p-row"><span class="chip c-today">Today</span>Sign the excursion form</div>
+          <div class="p-row"><span class="chip c-soon">Soon</span>Swimming term fee</div>
+        </div>
+        <div class="p-tiles">
+          <div class="p-tile"><svg width="44" height="44" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="18" fill="none" stroke="#EEEAE4" stroke-width="5"/><circle cx="22" cy="22" r="18" fill="none" stroke="#2F5446" stroke-width="5" stroke-linecap="round" stroke-dasharray="70 113" transform="rotate(-90 22 22)"/><text x="22" y="26" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="11" fill="#23201D">$312</text></svg><div class="l">Budget this week</div></div>
+          <div class="p-tile"><svg width="44" height="44" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="18" fill="none" stroke="#EEEAE4" stroke-width="5"/><circle cx="22" cy="22" r="18" fill="none" stroke="#C98F7B" stroke-width="5" stroke-linecap="round" stroke-dasharray="34 113" transform="rotate(-90 22 22)"/><text x="22" y="26" text-anchor="middle" font-family="Fraunces, Georgia, serif" font-size="11" fill="#23201D">1h30</text></svg><div class="l">Free time today</div></div>
+        </div>
+      </div>
+      <div class="p-dock"><span>Drop a thought, or ask</span><span class="mic"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5.5 11a6.5 6.5 0 0 0 13 0"/><path d="M12 17.5V21"/></svg></span></div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eb">Drop it, don't sort it</div>
+      <h2>Say it once. It lands <i>where it belongs.</i></h2>
+      <p>Type it or say it, as messy as it comes. No folders, no choosing a category.</p>
+    </div>
+    <div class="drops">
+      <div class="drop"><div class="said">We're out of milk and dishwasher tablets</div><div class="arrow" aria-hidden="true">&rarr;</div><div class="lands"><span class="tag" style="background:var(--home)">Shopping · 2 items</span></div></div>
+      <div class="drop"><div class="said">Mia's excursion form is due Thursday</div><div class="arrow" aria-hidden="true">&rarr;</div><div class="lands"><span class="tag" style="background:var(--kids)">To-do · due Thu</span><span class="tag" style="background:var(--kids)">Kids</span></div></div>
+      <div class="drop"><div class="said">Bathrooms every Saturday from now on</div><div class="arrow" aria-hidden="true">&rarr;</div><div class="lands"><span class="tag" style="background:var(--home)">Chore · every Sat</span></div></div>
+      <div class="drop"><div class="said">Talk to Tom about the holiday dates</div><div class="arrow" aria-hidden="true">&rarr;</div><div class="lands"><span class="tag" style="background:var(--you)">To discuss · Tom</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eb">What's inside</div>
+      <h2>A calm view of your whole life, <i>finally.</i></h2>
+    </div>
+    <div class="grid">
+      <div class="feat"><div class="dot" style="background:var(--work)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#23201D" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2"/></svg></div><h3>A morning <i>brief</i></h3><p>What's next, what's due soon and where the gaps are, in a few calm lines.</p></div>
+      <div class="feat"><div class="dot" style="background:var(--kids)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#23201D" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></div><h3>Your day and <i>week</i></h3><p>Your calendar, to-dos and chores together, with clashes spotted before they happen.</p></div>
+      <div class="feat"><div class="dot" style="background:var(--home)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#23201D" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><path d="M4 11h16a8 8 0 0 1-16 0z"/></svg></div><h3>Meals and <i>recipes</i></h3><p>A meal plan linked to your recipes, the shopping list and what's in the freezer.</p></div>
+      <div class="feat"><div class="dot" style="background:var(--you)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#23201D" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><rect x="3" y="6" width="18" height="13" rx="2.5"/><path d="M3 9.5h18"/></svg></div><h3>Money at a <i>glance</i></h3><p>This week and this month by category, from a screenshot of your bank app.</p></div>
+      <div class="feat"><div class="dot" style="background:var(--health)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#23201D" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/></svg></div><h3>Room to <i>breathe</i></h3><p>It notices when your days have no rest in them, and helps you find time for yourself.</p></div>
+      <div class="feat"><div class="dot" style="background:var(--work)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#23201D" stroke-width="1.75" stroke-linecap="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg></div><h3>School emails, <i>sorted</i></h3><p>It finds the dates and forms in your email and asks before adding them.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="offer">
+      <div>
+        <div class="eb" style="color:#86452F">Waitlist only</div>
+        <h2>The waitlist gets in <i>first.</i></h2>
+        <p>For 3 to 5 days before everyone else, the waitlist gets Mental Offload at the lowest price it will ever be, plus a free month of the membership: a community of mums sharing how they use AI.</p>
+      </div>
+      <div class="price">
+        <div class="was">$49</div>
+        <div class="now">$37</div>
+        <div class="plus">+ your first month of the membership free</div>
+        <div class="limit">3 to 5 days only</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="eb">Good to know</div>
+      <h2>Honest <i>details</i></h2>
+    </div>
+    <div class="know">
+      <div><span class="t"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><div><b>It runs inside Claude.</b><p>You'll need your own paid Claude plan. There's no new app to download.</p></div></div>
+      <div><span class="t"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><div><b>One evening to set up.</b><p>In small steps, all at once or bit by bit. Each step makes something work straight away.</p></div></div>
+      <div><span class="t"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><div><b>Your data stays yours.</b><p>Everything lives in your own Claude account. It never sends, deletes or pays for anything without your yes.</p></div></div>
+      <div><span class="t"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span><div><b>Works on your phone.</b><p>Use it in the Claude app. Add things by typing, by voice, or with a photo.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="join">
+  <div class="wrap">
+    <div class="join" id="joinBox">
+      <div class="before">
+        <div class="eb">Join the waitlist</div>
+        <h2>Get in <i>first.</i></h2>
+        <p class="sub">We'll email you when the waitlist offer opens. No spam, and you can leave any time.</p>
+      </div>
+      <form id="waitlist" novalidate>
+        <label class="f" for="first_name">First name
+          <input id="first_name" name="first_name" type="text" autocomplete="given-name" maxlength="60">
+        </label>
+        <label class="f" for="email">Email
+          <input id="email" name="email" type="email" autocomplete="email" required maxlength="200" placeholder="you@example.com">
+        </label>
+        <fieldset>
+          <legend>Which would you prefer it to run on?</legend>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="system" value="claude" checked><span>Claude</span></label>
+            <label class="opt"><input type="radio" name="system" value="chatgpt"><span>ChatGPT</span></label>
+            <label class="opt"><input type="radio" name="system" value="muse"><span>Muse</span></label>
+            <label class="opt"><input type="radio" name="system" value="app"><span>A stand-alone app</span></label>
+          </div>
+        </fieldset>
+        <div class="hp" aria-hidden="true"><label for="website">Leave this empty</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+        <button class="btn" type="submit" id="submitBtn">Join the waitlist</button>
+        <p class="msg" id="msg" role="status" aria-live="polite"></p>
+        <p class="form-note">Mental Offload runs on Claude for now. Your answer tells us what to build next.</p>
+      </form>
+      <div class="done" id="done">
+        <div class="eb">You're on the list</div>
+        <h3>Thank you<span id="doneName"></span>. <i>Talk soon.</i></h3>
+        <p>We'll email you as soon as the waitlist offer opens. Keep an eye on your inbox, and check your spam folder just in case.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="wrap">
+  <span class="mark">Mental <i>Offload</i></span>
+  Made by a mum, for mums carrying the mental load.
+</footer>
+
+<script>
+(function(){
+  var form = document.getElementById('waitlist');
+  var box = document.getElementById('joinBox');
+  var msg = document.getElementById('msg');
+  var btn = document.getElementById('submitBtn');
+  var local = /^(localhost|127\.0\.0\.1)$/.test(location.hostname);
+  function say(t, err){ msg.textContent = t; msg.className = 'msg' + (err ? ' err' : ''); }
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    var email = form.email.value.trim();
+    var first = form.first_name.value.trim();
+    var system = (form.querySelector('input[name=system]:checked') || {}).value || 'claude';
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { say('Please check your email address.', true); form.email.focus(); return; }
+    btn.disabled = true; say('Adding you to the list...');
+    function success(){
+      document.getElementById('doneName').textContent = first ? ', ' + first : '';
+      box.classList.add('ok');
+      box.scrollIntoView({block:'center'});
+    }
+    if (local) { setTimeout(success, 400); return; }
+    fetch('/api/subscribe', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({email: email, first_name: first, system: system, website: form.website.value})
+    }).then(function(r){ return r.json().catch(function(){ return {}; }).then(function(j){ return {ok: r.ok, j: j}; }); })
+      .then(function(res){
+        if (res.ok) { success(); }
+        else { say(res.j.error || 'Something went wrong. Please try again in a minute.', true); btn.disabled = false; }
+      })
+      .catch(function(){ say('No connection. Please try again in a minute.', true); btn.disabled = false; });
+  });
+})();
+</script>
+</body>
+</html>
