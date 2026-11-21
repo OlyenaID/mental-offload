@@ -220,6 +220,9 @@ footer .mark{font-size:18px;color:var(--ink);display:block;margin-bottom:6px}
 
 /* phone width */
 @media (max-width:860px){
+  .hero-bio{display:flex;flex-direction:column;align-items:flex-start}
+  .hero-bio .btn{order:-1;margin-bottom:22px}
+  .hero-bio .bio{margin-bottom:0}
   .hero{grid-template-columns:1fr;grid-template-areas:"head" "media" "bio";row-gap:32px;padding-block:8px 40px}
   .hero-media{justify-self:center}
   .grid{grid-template-columns:1fr 1fr}
