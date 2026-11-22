@@ -121,6 +121,16 @@ section{padding-block:56px}
 .cta-row{margin-top:28px}
 .know-link{display:inline-block;margin-top:8px;font-size:14px;font-weight:600;color:var(--green);text-underline-offset:3px}
 
+/* what it's like now */
+.now-sec{padding-top:8px}
+.now{background:var(--green);color:#fff;border-radius:28px;padding:40px;display:grid;grid-template-columns:.8fr 1.2fr;gap:36px;align-items:start}
+.now .eb{color:var(--green-soft)}
+.now h2{font-size:clamp(30px,4.2vw,42px);line-height:1.1;letter-spacing:-.5px;margin-top:10px}
+.nowlist{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.nowlist li{display:flex;gap:14px;align-items:flex-start;font-family:var(--display);font-size:clamp(20px,2.3vw,24px);line-height:1.3;padding:14px 0;border-top:1px solid rgba(255,255,255,.16)}
+.nowlist li:first-child{border-top:none;padding-top:0}
+.nowlist .ok{flex:none;width:26px;height:26px;border-radius:13px;background:var(--green-soft);display:flex;align-items:center;justify-content:center;margin-top:3px}
+
 /* no more */
 .nomore{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .nomore li{display:flex;gap:14px;align-items:flex-start;background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px;font-size:17px;line-height:1.45}
@@ -220,6 +230,7 @@ footer .mark{font-size:18px;color:var(--ink);display:block;margin-bottom:6px}
 
 /* phone width */
 @media (max-width:860px){
+  .now{grid-template-columns:1fr;gap:20px;padding:28px 24px}
   .hero-bio{display:flex;flex-direction:column;align-items:flex-start}
   .hero-bio .btn{order:-1;margin-bottom:22px}
   .hero-bio .bio{margin-bottom:0}
@@ -320,6 +331,25 @@ footer .mark{font-size:18px;color:var(--ink);display:block;margin-bottom:6px}
     </ul>
   </div>
 </section>
+
+<section class="now-sec">
+  <div class="wrap">
+    <div class="now">
+      <div class="now-head">
+        <div class="eb">What changed for me</div>
+        <h2>What it’s like <i>now.</i></h2>
+      </div>
+      <ul class="nowlist">
+        <li><span class="ok"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#23201D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>I don’t keep anything in my head.</li>
+        <li><span class="ok"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#23201D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>There’s a list for everything, but I didn’t write them.</li>
+        <li><span class="ok"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#23201D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>I don’t overplan, but I get more done.</li>
+        <li><span class="ok"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#23201D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>I’m not overbooked.</li>
+        <li><span class="ok"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#23201D" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>Changing the schedule when everything goes to shit is easier now.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 
 <section>
   <div class="wrap">
